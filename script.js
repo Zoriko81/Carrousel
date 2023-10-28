@@ -23,7 +23,6 @@ document.onkeydown = function(event) {
     switch (event.key) {
         case "ArrowRight":
         if (position < 7) {
-            //document.getElementById("carrouselAnim").style.animation="fadeIn 2s"
             image.classList.remove("carrouselAnim");
             void image.offsetWidth; 
             image.classList.add("carrouselAnim");
