@@ -6,7 +6,7 @@ let position = 1;
 
 // function update(position, image, nombre) {
 //     image.src = `img/${position}.jpg`
-//     nombre.innerHTML = `Position : ${position} / 7`
+//     nombre.innerHTML = `Image : ${position} / 7`
 // }
 
 // barreDroite.addEventListener("click", () => { 
@@ -29,7 +29,7 @@ document.onkeydown = function(event) {
             image.classList.add("carrouselAnim");
             position++
             image.src = `img/${position}.jpg`
-            nombre.innerHTML = `Position : ${position} / 7`
+            nombre.innerHTML = `Image : ${position} / 7`
         }
         else {
             image.classList.remove("carrouselAnim");
@@ -37,7 +37,7 @@ document.onkeydown = function(event) {
             image.classList.add("carrouselAnim");
             position = 1
             image.src = `img/${position}.jpg`
-            nombre.innerHTML = `Position : ${position} / 7`
+            nombre.innerHTML = `Image : ${position} / 7`
             }
         break;
         case "ArrowLeft":
@@ -47,7 +47,7 @@ document.onkeydown = function(event) {
                 image.classList.add("carrouselAnim");
                 position = 7
                 image.src = `img/${position}.jpg`
-                nombre.innerHTML = `Position : ${position} / 7`
+                nombre.innerHTML = `Image : ${position} / 7`
             }
             else if (position > 1) {
                 image.classList.remove("carrouselAnim");
@@ -55,7 +55,7 @@ document.onkeydown = function(event) {
                 image.classList.add("carrouselAnim");
                 position--
                 image.src = `img/${position}.jpg`
-                nombre.innerHTML = `Position : ${position} / 7`
+                nombre.innerHTML = `Image : ${position} / 7`
                 }
         break;
     }
@@ -66,12 +66,12 @@ document.onkeydown = function(event) {
 //         if (position < 7) {
 //             position++
 //             image.src = `img/${position}.jpg`
-//             nombre.innerHTML = `Position : ${position} / 7`
+//             nombre.innerHTML = `Image : ${position} / 7`
 //         }
 //         else {
 //             position = 1
 //             image.src = `img/${position}.jpg`
-//             nombre.innerHTML = `Position : ${position} / 7`
+//             nombre.innerHTML = `Image : ${position} / 7`
 //             }
 //     }
 //     });
@@ -81,12 +81,12 @@ document.onkeydown = function(event) {
 //             if (position == 1) {
 //                 position = 7
 //                 image.src = `img/${position}.jpg`
-//                 nombre.innerHTML = `Position : ${position} / 7`
+//                 nombre.innerHTML = `Image : ${position} / 7`
 //             }
 //             else if (position > 1) {
 //                 position--
 //                 image.src = `img/${position}.jpg`
-//                 nombre.innerHTML = `Position : ${position} / 7`
+//                 nombre.innerHTML = `Image : ${position} / 7`
 //                 }
 //         }
 //         });
@@ -99,7 +99,7 @@ barreDroite.addEventListener("click", () => {
         image.classList.add("carrouselAnim");
         position++
         image.src = `img/${position}.jpg`
-        nombre.innerHTML = `Position : ${position} / 7`
+        nombre.innerHTML = `Image : ${position} / 7`
     }
     else {
         image.classList.remove("carrouselAnim");
@@ -107,7 +107,7 @@ barreDroite.addEventListener("click", () => {
         image.classList.add("carrouselAnim");
         position = 1
         image.src = `img/${position}.jpg`
-        nombre.innerHTML = `Position : ${position} / 7`
+        nombre.innerHTML = `Image : ${position} / 7`
         }
 });
 
@@ -119,7 +119,7 @@ barreGauche.addEventListener("click", () => {
         image.classList.add("carrouselAnim");
         position = 7
         image.src = `img/${position}.jpg`
-        nombre.innerHTML = `Position : ${position} / 7`
+        nombre.innerHTML = `Image : ${position} / 7`
     }
     else if (position > 1) {
         image.classList.remove("carrouselAnim");
@@ -127,7 +127,7 @@ barreGauche.addEventListener("click", () => {
         image.classList.add("carrouselAnim");
         position--
         image.src = `img/${position}.jpg`
-        nombre.innerHTML = `Position : ${position} / 7`
+        nombre.innerHTML = `Image : ${position} / 7`
         }
 });
 
