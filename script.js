@@ -1,8 +1,7 @@
 const barreDroite = document.querySelector(".droite");
 const barreGauche = document.querySelector(".gauche");
 const image = document.querySelector(".image");
-const nombre = document.querySelector(".position")
-const carrousel = document.getElementsByClassName("carrousel").src="img/1.jpg";
+const nombre = document.querySelector(".position");
 let position = 1;
 
 // function update(position, image, nombre) {
@@ -24,11 +23,18 @@ document.onkeydown = function(event) {
     switch (event.key) {
         case "ArrowRight":
         if (position < 7) {
+            //document.getElementById("carrouselAnim").style.animation="fadeIn 2s"
+            image.classList.remove("carrouselAnim");
+            void image.offsetWidth; 
+            image.classList.add("carrouselAnim");
             position++
             image.src = `img/${position}.jpg`
             nombre.innerHTML = `Position : ${position} / 7`
         }
         else {
+            image.classList.remove("carrouselAnim");
+            void image.offsetWidth; 
+            image.classList.add("carrouselAnim");
             position = 1
             image.src = `img/${position}.jpg`
             nombre.innerHTML = `Position : ${position} / 7`
@@ -36,11 +42,17 @@ document.onkeydown = function(event) {
         break;
         case "ArrowLeft":
             if (position == 1) {
+                image.classList.remove("carrouselAnim");
+                void image.offsetWidth; 
+                image.classList.add("carrouselAnim");
                 position = 7
                 image.src = `img/${position}.jpg`
                 nombre.innerHTML = `Position : ${position} / 7`
             }
             else if (position > 1) {
+                image.classList.remove("carrouselAnim");
+                void image.offsetWidth; 
+                image.classList.add("carrouselAnim");
                 position--
                 image.src = `img/${position}.jpg`
                 nombre.innerHTML = `Position : ${position} / 7`
@@ -82,11 +94,17 @@ document.onkeydown = function(event) {
 
 barreDroite.addEventListener("click", () => { 
     if (position < 7) {
+        image.classList.remove("carrouselAnim");
+        void image.offsetWidth; 
+        image.classList.add("carrouselAnim");
         position++
         image.src = `img/${position}.jpg`
         nombre.innerHTML = `Position : ${position} / 7`
     }
     else {
+        image.classList.remove("carrouselAnim");
+        void image.offsetWidth; 
+        image.classList.add("carrouselAnim");
         position = 1
         image.src = `img/${position}.jpg`
         nombre.innerHTML = `Position : ${position} / 7`
@@ -96,11 +114,17 @@ barreDroite.addEventListener("click", () => {
 
 barreGauche.addEventListener("click", () => { 
     if (position == 1) {
+        image.classList.remove("carrouselAnim");
+        void image.offsetWidth; 
+        image.classList.add("carrouselAnim");
         position = 7
         image.src = `img/${position}.jpg`
         nombre.innerHTML = `Position : ${position} / 7`
     }
     else if (position > 1) {
+        image.classList.remove("carrouselAnim");
+        void image.offsetWidth; 
+        image.classList.add("carrouselAnim");
         position--
         image.src = `img/${position}.jpg`
         nombre.innerHTML = `Position : ${position} / 7`
