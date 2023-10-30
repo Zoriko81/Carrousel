@@ -1,3 +1,5 @@
+/* Initialisation */
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% { opacity: 100;}
@@ -16,6 +18,7 @@ body {
 }
 
 
+/* ###Contenu */
 
 h1 {
     text-align: center;
@@ -50,7 +53,7 @@ main {
 }
 
 .carrouselAnim {
-    animation: fadeIn 1s;
+    animation: fadeIn 0.5s;
 }
 
 .carrousel img:hover {
@@ -77,6 +80,11 @@ main {
     }
 }
 
+.gauche:active, .droite:active {
+    width: 15vh;
+    height: 15vh;
+}
+
 .gauche {
     justify-self: end;
 }
@@ -95,6 +103,7 @@ main {
     text-shadow: 0px 0px 30px black;
     font-weight: bold;
 }
+
 
 /* Responsive */
 
